@@ -11,4 +11,4 @@ Then we converted videos to dynamic images.
 For feature extraction we used dynamic images (Source :https://arxiv.org/pdf/1612.00738). And from dynamic images we extracted Histogram of Oriented Gradients(HOG) features.
 After extracting features, we split the data into training and testing set in a ratio of 70% and 30% respectively.
 After preparing the training and testing dataset, we perform various algorithms like SVM, KNN and Alexnet, etc..
-Accuracy is highest in the case of model trained by alexnet i.e. 95% and lowest in the case of random forest i.e. 90%.
+Accuracy is highest in the case of model trained by alexnet i.e. 98% and lowest in the case of random forest i.e. 80%.
