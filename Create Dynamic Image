@@ -1,0 +1,14 @@
+clc;
+clear;
+
+d = dir('*.avi');
+len = size(d,1);
+
+for i=1:numel(d)
+    fn = d(i).name;
+    [fdi, bdi] = GetDynamicImages(fn);
+    imwrite(fdi, strcat( fn(1:end-4), '_fdi.jpg'));
+%     imwrite(bdi, strcat('../rgb_dynamic_image/', fn2, '_bdi.jpg'));
+end
+
+% size(fdi)
